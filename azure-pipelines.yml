@@ -23,7 +23,7 @@ steps:
     useProxy: 'none'
     strAuthType: 'clientToken'
     strToken: 'p-xyz8tcjezcx9..aw7ZI4Ym/EjMNbogibgvEO7hsgwy30xLxTy/3xttBKM='
-    strKVEnginePath: 'secret/data'
+    strKVEnginePath: 'secret'
     kvVersion: 'v2'
     strSecretPath: '/dir/s1'
     strPrefixType: 'custom'
