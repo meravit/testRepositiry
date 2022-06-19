@@ -19,7 +19,7 @@ steps:
   displayName: 'Run a multi-line script'
 
 # Starter pipeline
-- task: VaultReadKV@3
+- task: VaultReadKV@2
   inputs:
     strUrl: 'https://hvp.akeyless.io'
     ignoreCertificateChecks: true
