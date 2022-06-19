@@ -23,9 +23,9 @@ steps:
     useProxy: 'none'
     strAuthType: 'clientToken'
     strToken: 'p-xyz8tcjezcx9..aw7ZI4Ym/EjMNbogibgvEO7hsgwy30xLxTy/3xttBKM='
-    strKVEnginePath: 'secret'
+    strKVEnginePath: 'mysql/creds'
     kvVersion: 'v2'
-    strSecretPath: '/dir/s1'
+    strSecretPath: 'mysql2'
     strPrefixType: 'custom'
     replaceCR: false
 
