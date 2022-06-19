@@ -12,17 +12,10 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
-
-# Starter pipeline
-- task: VaultReadKV@2
+- task: VaultReadKV@4
   inputs:
     strUrl: 'https://hvp.akeyless.io'
-    ignoreCertificateChecks: true
+    ignoreCertificateChecks: false
     useProxy: 'none'
     strAuthType: 'clientToken'
     strToken: 'p-xyz8tcjezcx9..aw7ZI4Ym/EjMNbogibgvEO7hsgwy30xLxTy/3xttBKM='
@@ -31,3 +24,9 @@ steps:
     strSecretPath: '/dir/s1'
     strPrefixType: 'custom'
     replaceCR: false
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
+
