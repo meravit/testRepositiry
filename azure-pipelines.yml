@@ -6,8 +6,12 @@
 trigger:
 - main
 
+#pool:
+#  vmImage: ubuntu-latest
 pool:
-  vmImage: ubuntu-latest
+  name: myhost
+  demands:
+   - agent.name -equals Meravs-MacBook-Pro
 
 steps:
 - script: echo Hello, world!
