@@ -7,14 +7,14 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: self-hosted
 
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 - task: VaultReadKV@4
   inputs:
-    strUrl: 'https://hvp.akeyless.io'
+    strUrl: 'http://localhost:8200'
     ignoreCertificateChecks: false
     useProxy: 'none'
     strAuthType: 'clientToken'
